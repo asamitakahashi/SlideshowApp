@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,55 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayz-SQ-5Rf">
+                                <rect key="frame" x="93" y="421" width="31" height="30"/>
+                                <state key="normal" title="戻る"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIf-HN-ifm">
+                                <rect key="frame" x="290" y="421" width="31" height="30"/>
+                                <state key="normal" title="進む"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ATd-e8-T3b">
+                                <rect key="frame" x="20" y="114" width="374" height="207"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15n-Da-F8X">
+                                <rect key="frame" x="174" y="421" width="66" height="30"/>
+                                <state key="normal" title="再生/停止"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uIf-HN-ifm" secondAttribute="trailing" constant="93" id="2Pc-LZ-4cH"/>
+                            <constraint firstItem="uIf-HN-ifm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="15n-Da-F8X" secondAttribute="trailing" constant="8" symbolic="YES" id="2RW-zm-Z4s"/>
+                            <constraint firstItem="15n-Da-F8X" firstAttribute="centerX" secondItem="ATd-e8-T3b" secondAttribute="centerX" id="GbR-Hc-kCw"/>
+                            <constraint firstItem="ATd-e8-T3b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="OcH-G8-0Oq"/>
+                            <constraint firstItem="15n-Da-F8X" firstAttribute="top" secondItem="ATd-e8-T3b" secondAttribute="bottom" constant="100" id="PhG-bH-MhC"/>
+                            <constraint firstItem="ATd-e8-T3b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Qyj-6i-d1j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ayz-SQ-5Rf" secondAttribute="bottom" constant="411" id="Rsk-im-pom"/>
+                            <constraint firstItem="15n-Da-F8X" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ayz-SQ-5Rf" secondAttribute="trailing" constant="8" symbolic="YES" id="UMz-lr-bwo"/>
+                            <constraint firstItem="ayz-SQ-5Rf" firstAttribute="top" secondItem="ATd-e8-T3b" secondAttribute="bottom" constant="100" id="WYs-aN-xcU"/>
+                            <constraint firstItem="15n-Da-F8X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ed7-4K-TEg"/>
+                            <constraint firstItem="ayz-SQ-5Rf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="uzl-fT-Nmw"/>
+                            <constraint firstItem="uIf-HN-ifm" firstAttribute="top" secondItem="ATd-e8-T3b" secondAttribute="bottom" constant="100" id="zUn-eQ-FKQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="ViewController" destination="ATd-e8-T3b" id="unm-5I-RPM"/>
+                        <outlet property="backButton" destination="ayz-SQ-5Rf" id="g26-wL-FPX"/>
+                        <outlet property="nextButton" destination="uIf-HN-ifm" id="RNj-XV-irm"/>
+                        <outlet property="switchButton" destination="15n-Da-F8X" id="bgd-xa-KPN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="132" y="129"/>
         </scene>
     </scenes>
 </document>
