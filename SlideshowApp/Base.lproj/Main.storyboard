@@ -52,6 +52,7 @@
                     <connections>
                         <outlet property="ViewController" destination="ATd-e8-T3b" id="unm-5I-RPM"/>
                         <outlet property="backButton" destination="ayz-SQ-5Rf" id="g26-wL-FPX"/>
+                        <outlet property="imageView" destination="ATd-e8-T3b" id="vwn-oE-BdT"/>
                         <outlet property="nextButton" destination="uIf-HN-ifm" id="RNj-XV-irm"/>
                         <outlet property="switchButton" destination="15n-Da-F8X" id="bgd-xa-KPN"/>
                     </connections>
