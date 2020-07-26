@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE4358FB24C9F10C00FA2417 /* ZoomInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4358FA24C9F10C00FA2417 /* ZoomInViewController.swift */; };
 		CEC8028B24C2C1DC00AFDB0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8028A24C2C1DC00AFDB0B /* AppDelegate.swift */; };
 		CEC8028D24C2C1DC00AFDB0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8028C24C2C1DC00AFDB0B /* SceneDelegate.swift */; };
 		CEC8028F24C2C1DC00AFDB0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8028E24C2C1DC00AFDB0B /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE4358FA24C9F10C00FA2417 /* ZoomInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomInViewController.swift; sourceTree = "<group>"; };
 		CEC8028724C2C1DC00AFDB0B /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC8028A24C2C1DC00AFDB0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEC8028C24C2C1DC00AFDB0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				CEC8028A24C2C1DC00AFDB0B /* AppDelegate.swift */,
 				CEC8028C24C2C1DC00AFDB0B /* SceneDelegate.swift */,
 				CEC8028E24C2C1DC00AFDB0B /* ViewController.swift */,
+				CE4358FA24C9F10C00FA2417 /* ZoomInViewController.swift */,
 				CEC8029024C2C1DC00AFDB0B /* Main.storyboard */,
 				CEC8029324C2C1DD00AFDB0B /* Assets.xcassets */,
 				CEC8029524C2C1DD00AFDB0B /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4358FB24C9F10C00FA2417 /* ZoomInViewController.swift in Sources */,
 				CEC8028F24C2C1DC00AFDB0B /* ViewController.swift in Sources */,
 				CEC8028B24C2C1DC00AFDB0B /* AppDelegate.swift in Sources */,
 				CEC8028D24C2C1DC00AFDB0B /* SceneDelegate.swift in Sources */,
