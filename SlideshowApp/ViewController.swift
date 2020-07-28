@@ -127,6 +127,19 @@ class ViewController: UIViewController {
     }
     //　遷移元から遷移先にデータ（画像）を渡す
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //タイマーを停止
+        self.timer.invalidate()
+        //nil にして再び再生（nil の時にタイマー生成）
+        self.timer = nil
+    //再生・停止ボタンタップ時に進むボタン・戻るボタンタップ非表示
+        nextButton.isEnabled = true
+        backButton.isEnabled = true
+        // ボタンの名前を再生とする
+        switchButton.setTitle("再生", for: .normal)
+        // 背景色・ボタン内テキストサイズを戻す
+        self.view.backgroundColor = UIColor.white
+        switchButton.titleLabel?.font =
+            UIFont.systemFont(ofSize: 20)
         // segueから遷移先のResultView Controllerのインスタンスを取得する
         let zoomInViewController:ZoomInViewController =
         segue.destination as! ZoomInViewController
