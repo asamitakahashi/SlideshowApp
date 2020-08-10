@@ -19,9 +19,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         //　初期画面
-        //　バンドルした画像ファイルを読み込み
-        //　Image Viewに画像を設定
-        let image = UIImage(named: "e")
+        //　バンドルした画像ファイルを読み込み1age Viewに画像を設定
+        let name = imageNameArray[displayImageNo]
+        let image = UIImage(named: name)
+        
         imageView.image = image
     }
     //一定の間隔で処理を行うためのタイマー
